@@ -1,0 +1,18 @@
+# Secrets - never commit
+.env
+.env.*
+*.env
+!.env.example
+*.pem
+*.key
+# Python / OS
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+# transient
+*.log
+!Code/audit/**/*.log
+Code/SCOPE/results/dryrun/
+Code/SCOPE/results/quarantine/
