@@ -22,6 +22,7 @@ Nothing is hard-coded to win. Every number is produced by the same shared evalua
 
 import argparse
 import json
+import os
 import logging
 import sys
 import time
@@ -45,6 +46,7 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout),
               logging.FileHandler(C.LOGS / "run_scope.log")],
 )
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 log = logging.getLogger("scope.run")
 
 # The baselines worth a held-out + behavioural head-to-head (the two strongest utility
@@ -98,6 +100,25 @@ def select_scope_basis(model, tok, cfg, train_pairs, decod, base_acc, dry=False)
     chosen = (max(safe, key=lambda t: len(t[1])) if safe
               else min(trials, key=lambda t: t[3]))
     return chosen[2], chosen[0], chosen[1], chosen[3]
+
+
+def _free_caches():
+    """Clear the TransformerLens / nnsight conversion caches that unload_model leaves, so
+    VRAM does not accumulate across models (OOM on a 44 GB card otherwise)."""
+    try:
+        import utils_attention as UA
+        import gc
+        import torch
+        for _nm in dir(UA):
+            if _nm.endswith("_CACHE"):
+                _o = getattr(UA, _nm)
+                if isinstance(_o, dict):
+                    _o.clear()
+        gc.collect()
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+    except Exception:
+        pass
 
 
 def run_model(cfg, dry, push):
@@ -258,6 +279,7 @@ def run_model(cfg, dry, push):
         push(f"scope: error on {name}")
     finally:
         unload_model(name)
+        _free_caches()
     log.info("scope %s complete", name)
 
 
