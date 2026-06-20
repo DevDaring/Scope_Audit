@@ -1,1 +1,1 @@
-setup complete; SCOPE dry-run (2 instances) @ Sat Jun 20 14:39:35 UTC 2026
+dry rc=1 FAILED (results/SCOPE_DRYFAIL_1781974841.txt); pull+retry in 60s @ Sat Jun 20 17:00:41 UTC 2026

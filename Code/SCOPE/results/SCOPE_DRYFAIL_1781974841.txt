@@ -1,0 +1,320 @@
+2026-06-20 14:39:42,358 | INFO | repair.integrity | integrity: 0 files, 0 deduped, 0 quarantined
+2026-06-20 14:39:42,911 | INFO | load_osm | Loading model: llama-3.1-8b-instruct (meta-llama/Llama-3.1-8B-Instruct) ...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:07<00:21,  7.16s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:07,  3.69s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:10<00:02,  2.89s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  1.86s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:10<00:00,  2.66s/it]
+2026-06-20 14:39:54,325 | INFO | load_osm |   Model llama-3.1-8b-instruct               | attention impl: flash_attention_2
+2026-06-20 14:39:54,325 | INFO | load_osm | Model 'llama-3.1-8b-instruct' loaded successfully.
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:40:43,574 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:41:29,047 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:41:29,055 | INFO | utils_attention | Converting HF model 'meta-llama/Llama-3.1-8B-Instruct' to HookedTransformer for CDVA patching ...
+Loaded pretrained model meta-llama/Llama-3.1-8B-Instruct into HookedTransformer
+Moving model to device:  cuda
+2026-06-20 14:42:08,527 | INFO | utils_attention | HookedTransformer for 'meta-llama/Llama-3.1-8B-Instruct' cached (device=cuda:0).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:43:06,064 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:43:52,631 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:43:54,393 | INFO | scope.run | scope llama-3.1-8b-instruct: localised layers=[1, 2, 3, 4, 5, 6, 7, 8] pctile=75.0 util=-0.005 decod 0.3703->0.3724 (drop -0.01)
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:46:12,999 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:46:59,376 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:50:20,826 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:51:02,691 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:53:11,380 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:53:55,579 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:54:45,365 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:55:32,463 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 14:57:54,923 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 14:58:35,792 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:02:21,247 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:03:08,676 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:19:32,906 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:20:14,699 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:21:37,723 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:22:23,689 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:23:16,972 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:24:03,253 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:30:06,173 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:30:17,371 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:30:29,384 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:30:41,279 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:30:53,106 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:31:56,193 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:32:42,667 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:33:33,926 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:34:21,189 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:35:12,847 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:35:59,699 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-20 15:36:50,840 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:37:37,295 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:37:37,619 | INFO | load_osm | Model 'llama-3.1-8b-instruct' unloaded and VRAM freed.
+2026-06-20 15:37:37,619 | INFO | scope.run | scope llama-3.1-8b-instruct complete
+2026-06-20 15:37:38,188 | INFO | load_osm | Loading model: qwen2.5-7b-instruct (Qwen/Qwen2.5-7B-Instruct) ...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.07s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.04s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.01s/it]
+2026-06-20 15:37:42,867 | INFO | load_osm |   Model qwen2.5-7b-instruct                 | attention impl: flash_attention_2
+2026-06-20 15:37:42,868 | INFO | load_osm | Model 'qwen2.5-7b-instruct' loaded successfully.
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:38:20,051 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:38:54,659 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:38:54,667 | INFO | utils_attention | Creating nnsight LanguageModel wrapper for 'Qwen/Qwen2.5-7B-Instruct' (cached).
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:39:35,195 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:40:10,785 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:40:11,528 | INFO | scope.run | scope qwen2.5-7b-instruct: localised layers=[0, 1, 2, 3, 4, 5, 6] pctile=75.0 util=-0.010 decod 0.4170->0.4214 (drop -0.01)
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:41:18,255 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:41:54,116 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:45:08,223 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:45:56,977 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:47:48,357 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:48:26,149 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:49:05,693 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:49:41,536 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:52:31,426 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:53:52,213 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 15:56:46,675 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 15:57:22,188 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:08:10,838 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:09:02,698 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:10:38,039 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:11:57,856 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:12:41,250 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:13:20,300 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:18:21,844 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:18:33,248 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:18:46,104 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:18:58,468 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:19:10,970 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:20:07,613 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:20:43,483 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:21:22,127 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:21:59,747 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:22:36,755 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:23:11,639 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-20 16:23:49,183 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:24:24,836 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:24:25,360 | INFO | load_osm | Model 'qwen2.5-7b-instruct' unloaded and VRAM freed.
+2026-06-20 16:24:25,360 | INFO | scope.run | scope qwen2.5-7b-instruct complete
+2026-06-20 16:24:25,868 | INFO | load_osm | Loading model: gemma-2-2b-it (google/gemma-2-2b-it) ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.35s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.41it/s]
+2026-06-20 16:24:28,546 | INFO | load_osm |   Model gemma-2-2b-it                       | attention impl: flash_attention_2
+2026-06-20 16:24:28,546 | INFO | load_osm | Model 'gemma-2-2b-it' loaded successfully.
+2026-06-20 16:25:09,348 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:25:48,499 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:25:48,506 | INFO | utils_attention | Converting HF model 'google/gemma-2-2b-it' to HookedTransformer for CDVA patching ...
+Loaded pretrained model google/gemma-2-2b-it into HookedTransformer
+Moving model to device:  cuda
+2026-06-20 16:26:09,666 | INFO | utils_attention | HookedTransformer for 'google/gemma-2-2b-it' cached (device=cuda:0).
+2026-06-20 16:27:01,932 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:27:42,081 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:27:44,516 | INFO | scope.run | scope gemma-2-2b-it: localised layers=[0, 1, 2, 3, 4, 5, 6] pctile=75.0 util=0.005 decod 0.5740->0.5527 (drop 0.04)
+2026-06-20 16:30:46,524 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:31:37,859 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:35:08,326 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:35:48,255 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:37:24,965 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:38:02,032 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:38:48,920 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:39:29,200 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:40:50,974 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:41:27,116 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:43:36,642 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:44:18,645 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:48:49,554 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:49:26,396 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:50:23,757 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:51:03,313 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:51:03,362 | ERROR | scope.run | baseline gemma-2-2b-it/nofreelunch raised: CUDA out of memory. Tried to allocate 2.20 GiB. GPU 0 has a total capacity of 44.45 GiB of which 1.54 GiB is free. Process 1743912 has 42.90 GiB memory in use. 
+2026-06-20 16:53:58,843 | INFO | osm_behavioral | OSM gemma-2-2b-it: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:54:09,994 | INFO | osm_behavioral | OSM gemma-2-2b-it: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:54:21,278 | INFO | osm_behavioral | OSM gemma-2-2b-it: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:54:33,304 | INFO | osm_behavioral | OSM gemma-2-2b-it: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:54:44,756 | INFO | osm_behavioral | OSM gemma-2-2b-it: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:55:41,657 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:56:21,508 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:57:07,198 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:57:48,491 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:58:32,312 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:59:12,123 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 16:59:56,547 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 17:00:36,383 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-20 17:00:36,614 | INFO | load_osm | Model 'gemma-2-2b-it' unloaded and VRAM freed.
+2026-06-20 17:00:36,615 | INFO | scope.run | scope gemma-2-2b-it complete
+2026-06-20 17:00:37,214 | INFO | load_osm | Loading model: phi-4-mini-instruct (microsoft/Phi-4-mini-instruct) ...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.45s/it]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.08s/it]
+Traceback (most recent call last):
+  File "/workspace/Scope_Audit/Code/SCOPE/run_scope.py", line 288, in <module>
+    main()
+  File "/workspace/Scope_Audit/Code/SCOPE/run_scope.py", line 284, in main
+    cmd_main(dry=(args.mode == "dry"))
+  File "/workspace/Scope_Audit/Code/SCOPE/run_scope.py", line 271, in cmd_main
+    run_model(cfg, dry, push)
+  File "/workspace/Scope_Audit/Code/SCOPE/run_scope.py", line 129, in run_model
+    model, tok = load_model(cfg)
+                 ^^^^^^^^^^^^^^^
+  File "/workspace/Scope_Audit/Code/audit/GPU_CPU/load_osm.py", line 204, in load_model
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py", line 568, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py", line 272, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py", line 4455, in from_pretrained
+    ) = cls._load_pretrained_model(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py", line 4884, in _load_pretrained_model
+    disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/transformers/modeling_utils.py", line 814, in _load_state_dict_into_meta_model
+    param = param[...]
+            ~~~~~^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 44.45 GiB of which 38.69 MiB is free. Process 1743912 has 44.40 GiB memory in use. Of the allocated memory 43.95 GiB is allocated by PyTorch, and 131.89 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
