@@ -1,0 +1,5 @@
+{
+  "global_tau": 0.7643661499023438,
+  "method": "75th_percentile_abs_delta_logit",
+  "note": "Dev seeds not tagged; percentile fallback used."
+}
