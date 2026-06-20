@@ -1,1 +1,1 @@
-dry rc=1 FAILED (results/SCOPE_DRYFAIL_1781974841.txt); pull+retry in 60s @ Sat Jun 20 17:00:41 UTC 2026
+dry rc=143 FAILED (results/SCOPE_DRYFAIL_1781975454.txt); pull+retry in 60s @ Sat Jun 20 17:10:54 UTC 2026
