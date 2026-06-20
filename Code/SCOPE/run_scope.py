@@ -87,7 +87,7 @@ def select_scope_basis(model, tok, cfg, train_pairs, decod, base_acc, dry=False)
         basis = S.build_scope_basis(model, tok, cfg, train_pairs, layers, protect=C.PROTECT)
         if not basis:
             continue
-        acc = E.native_accuracy(model, tok, cfg, basis, C.BASELINE_E4_LIMIT, C.E4_MAX_TOKENS)
+        acc = E.native_accuracy(model, tok, cfg, basis, (C.DRY_LIMIT if dry else C.BASELINE_E4_LIMIT), C.E4_MAX_TOKENS)
         uc = (base_acc - acc) if (np.isfinite(base_acc) and np.isfinite(acc)) else float("inf")
         trials.append((pctile, sorted(basis.keys()), basis, float(uc)))
         if dry:
@@ -128,7 +128,7 @@ def run_model(cfg, dry, push):
 
     model, tok = load_model(cfg)
     try:
-        base_acc = E.native_accuracy(model, tok, cfg, None, C.BASELINE_E4_LIMIT, C.E4_MAX_TOKENS)
+        base_acc = E.native_accuracy(model, tok, cfg, None, (C.DRY_LIMIT if dry else C.BASELINE_E4_LIMIT), C.E4_MAX_TOKENS)
 
         # ---- Stage 1: localise (decodability map) ----
         decod = S.decodability_map(model, tok, cfg, sub_pairs, n=(C.DRY_LIMIT if dry else None))
@@ -161,7 +161,7 @@ def run_model(cfg, dry, push):
         rows = []
         sc_re = E.e3_reaudit(model, tok, cfg, eval_pairs, scope_basis)
         crr, mer, npair = _crr(sc_re)
-        sc_acc = E.native_accuracy(model, tok, cfg, scope_basis, C.BASELINE_E4_LIMIT, C.E4_MAX_TOKENS)
+        sc_acc = E.native_accuracy(model, tok, cfg, scope_basis, (C.DRY_LIMIT if dry else C.BASELINE_E4_LIMIT), C.E4_MAX_TOKENS)
         rows.append({"method": "scope", "model_name": name, "status": "ok", "signal": "audit_causal",
                      "causal_residual_removed": crr, "mean_erased_commutator": mer, "n_pairs": npair,
                      "utility_cost": (base_acc - sc_acc), "baseline_acc": base_acc, "erased_acc": sc_acc,
@@ -177,7 +177,7 @@ def run_model(cfg, dry, push):
                 else:
                     re = E.e3_reaudit(model, tok, cfg, eval_pairs, basis)
                     c2, m2, n2 = _crr(re)
-                    er = E.native_accuracy(model, tok, cfg, basis, C.BASELINE_E4_LIMIT, C.E4_MAX_TOKENS)
+                    er = E.native_accuracy(model, tok, cfg, basis, (C.DRY_LIMIT if dry else C.BASELINE_E4_LIMIT), C.E4_MAX_TOKENS)
                     row.update({"causal_residual_removed": c2, "mean_erased_commutator": m2, "n_pairs": n2,
                                 "utility_cost": (base_acc - er), "baseline_acc": base_acc, "erased_acc": er})
                 rows.append(row)
@@ -229,7 +229,7 @@ def run_model(cfg, dry, push):
                 continue
             re = E.e3_reaudit(model, tok, cfg, eval_pairs, basis)
             c3, m3, n3 = _crr(re)
-            er = E.native_accuracy(model, tok, cfg, basis, C.BASELINE_E4_LIMIT, C.E4_MAX_TOKENS)
+            er = E.native_accuracy(model, tok, cfg, basis, (C.DRY_LIMIT if dry else C.BASELINE_E4_LIMIT), C.E4_MAX_TOKENS)
             abrows.append({"variant": variant, "model_name": name, "n_layers": len(basis),
                            "causal_residual_removed": c3, "mean_erased_commutator": m3,
                            "utility_cost": (base_acc - er), "erased_acc": er})
