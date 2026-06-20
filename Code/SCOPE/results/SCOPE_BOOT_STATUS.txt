@@ -1,1 +1,1 @@
-dry rc=143 FAILED (results/SCOPE_DRYFAIL_1781975454.txt); pull+retry in 60s @ Sat Jun 20 17:10:54 UTC 2026
+container started (GPU 0: NVIDIA RTX 5880 Ada Generation (UUID: GPU-061b563f-d26e-b73e-81d6-0755aa70dd61)) @ Sat Jun 20 17:53:13 UTC 2026
