@@ -1,1 +1,1 @@
-container started (GPU 0: NVIDIA RTX 5880 Ada Generation (UUID: GPU-061b563f-d26e-b73e-81d6-0755aa70dd61)) @ Sat Jun 20 17:53:13 UTC 2026
+container started (GPU 0: NVIDIA A100-SXM4-80GB (UUID: GPU-c8db8849-0c4e-3e47-b3ee-f36cbcdd074b)) @ Sat Jun 20 18:15:39 UTC 2026
