@@ -1,1 +1,1 @@
-setup complete; SCOPE dry-run (2 instances) @ Sat Jun 20 13:47:56 UTC 2026
+container started (GPU 0: NVIDIA RTX A6000 (UUID: GPU-e80ae0cc-09f4-125c-b7a3-73237d7c962c)) @ Sat Jun 20 14:35:44 UTC 2026
