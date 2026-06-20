@@ -1,1 +1,1 @@
-setup complete; SCOPE dry-run (2 instances) @ Sat Jun 20 18:30:42 UTC 2026
+container started (GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-a11258ac-d507-9384-9712-19566e4b75ac)) @ Sat Jun 20 18:40:55 UTC 2026
