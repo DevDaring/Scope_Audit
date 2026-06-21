@@ -1,0 +1,79 @@
+2026-06-21 01:08:36,338 | INFO | repair.integrity | integrity: 0 files, 0 deduped, 0 quarantined
+2026-06-21 01:08:36,866 | INFO | load_osm | Loading model: llama-3.1-8b-instruct (meta-llama/Llama-3.1-8B-Instruct) ...
+2026-06-21 01:08:40,799 | INFO | load_osm |   Model llama-3.1-8b-instruct               | attention impl: flash_attention_2
+2026-06-21 01:08:40,799 | INFO | load_osm | Model 'llama-3.1-8b-instruct' loaded successfully.
+2026-06-21 01:08:43,667 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:08:43,671 | INFO | utils_attention | Converting HF model 'meta-llama/Llama-3.1-8B-Instruct' to HookedTransformer for CDVA patching ...
+2026-06-21 01:09:16,756 | INFO | utils_attention | HookedTransformer for 'meta-llama/Llama-3.1-8B-Instruct' cached (device=cuda:0).
+2026-06-21 01:09:26,559 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:09:28,220 | INFO | scope.run | scope llama-3.1-8b-instruct: localised layers=[1, 2, 3, 4, 5, 6, 7, 8] pctile=75.0 util=0.000 decod 0.3679->0.3701 (drop -0.01)
+2026-06-21 01:10:55,319 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:11:37,280 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:12:01,298 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:12:05,705 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:12:28,245 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:14:38,246 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:21:32,135 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:21:43,195 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:21:49,239 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:24:49,625 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:24:59,008 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:09,263 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:19,500 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:29,687 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:44,144 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:48,424 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:52,722 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:56,869 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:25:57,096 | INFO | load_osm | Model 'llama-3.1-8b-instruct' unloaded and VRAM freed.
+2026-06-21 01:25:57,614 | INFO | scope.run | scope llama-3.1-8b-instruct complete
+2026-06-21 01:25:58,146 | INFO | load_osm | Loading model: qwen2.5-7b-instruct (Qwen/Qwen2.5-7B-Instruct) ...
+2026-06-21 01:26:01,724 | INFO | load_osm |   Model qwen2.5-7b-instruct                 | attention impl: flash_attention_2
+2026-06-21 01:26:01,724 | INFO | load_osm | Model 'qwen2.5-7b-instruct' loaded successfully.
+2026-06-21 01:26:03,297 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:26:03,301 | INFO | utils_attention | Creating nnsight LanguageModel wrapper for 'Qwen/Qwen2.5-7B-Instruct' (cached).
+2026-06-21 01:26:07,785 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:26:08,430 | INFO | scope.run | scope qwen2.5-7b-instruct: localised layers=[0, 1, 2, 3, 4, 5, 6] pctile=75.0 util=0.000 decod 0.4133->0.4191 (drop -0.01)
+2026-06-21 01:26:37,761 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:27:03,574 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:27:18,536 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:27:21,687 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:27:37,816 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:29:18,132 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:33:06,051 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:33:17,077 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:33:22,080 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:35:44,064 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:35:52,798 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:01,746 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:17,953 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:27,012 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 3/3 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:42,854 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:46,120 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:49,001 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:51,873 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:52,155 | INFO | load_osm | Model 'qwen2.5-7b-instruct' unloaded and VRAM freed.
+2026-06-21 01:36:52,340 | INFO | scope.run | scope qwen2.5-7b-instruct complete
+2026-06-21 01:36:52,966 | INFO | load_osm | Loading model: gemma-2-2b-it (google/gemma-2-2b-it) ...
+2026-06-21 01:36:55,571 | INFO | load_osm |   Model gemma-2-2b-it                       | attention impl: flash_attention_2
+2026-06-21 01:36:55,571 | INFO | load_osm | Model 'gemma-2-2b-it' loaded successfully.
+2026-06-21 01:36:58,493 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:36:58,498 | INFO | utils_attention | Converting HF model 'google/gemma-2-2b-it' to HookedTransformer for CDVA patching ...
+2026-06-21 01:37:16,853 | INFO | utils_attention | HookedTransformer for 'google/gemma-2-2b-it' cached (device=cuda:0).
+2026-06-21 01:37:30,560 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:37:33,114 | INFO | scope.run | scope gemma-2-2b-it: localised layers=[0, 1, 2, 3, 4, 5, 6] pctile=75.0 util=0.000 decod 0.5748->0.5559 (drop 0.03)
+2026-06-21 01:39:45,479 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:40:15,892 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:40:35,119 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:40:41,384 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:41:00,251 | INFO | osm_behavioral | OSM gemma-2-2b-it: 2/2 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:41:56,769 | INFO | repair.integrity | integrity: 0 files, 0 deduped, 0 quarantined
+2026-06-21 01:41:57,321 | INFO | load_osm | Loading model: llama-3.1-8b-instruct (meta-llama/Llama-3.1-8B-Instruct) ...
+2026-06-21 01:42:16,344 | INFO | load_osm |   Model llama-3.1-8b-instruct               | attention impl: flash_attention_2
+2026-06-21 01:42:16,344 | INFO | load_osm | Model 'llama-3.1-8b-instruct' loaded successfully.
+2026-06-21 01:43:03,970 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:43:47,413 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:43:47,420 | INFO | utils_attention | Converting HF model 'meta-llama/Llama-3.1-8B-Instruct' to HookedTransformer for CDVA patching ...
+2026-06-21 01:44:24,251 | INFO | utils_attention | HookedTransformer for 'meta-llama/Llama-3.1-8B-Instruct' cached (device=cuda:0).
+2026-06-21 01:55:13,028 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 01:55:52,242 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
