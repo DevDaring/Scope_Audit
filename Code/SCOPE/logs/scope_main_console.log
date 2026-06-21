@@ -514,3 +514,8 @@ Moving model to device:  cuda
 2026-06-21 09:57:44,298 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 10:06:10,248 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 10:06:48,831 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:12:45,383 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 10:15:02,781 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:15:40,507 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:23:54,814 | INFO | osm_behavioral | OSM gemma-2-2b-it: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:24:31,207 | INFO | osm_behavioral | OSM gemma-2-2b-it: 200/200 prompts done (sample_index=0, batch_size=8).
