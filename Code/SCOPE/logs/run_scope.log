@@ -151,3 +151,13 @@
 2026-06-21 04:11:39,872 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 04:12:10,938 | INFO | repair.checkpoint | checkpoint push: ok
 2026-06-21 04:12:12,960 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 800/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:12:14,465 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 04:16:42,992 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/160 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:17:36,813 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:18:08,768 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:18:43,239 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 304/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:19:15,412 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 400/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:19:50,497 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 504/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:20:22,564 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 600/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:20:57,043 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 04:21:28,856 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 800/800 prompts done (sample_index=0, batch_size=8).
