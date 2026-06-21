@@ -160,7 +160,7 @@ def run_model(cfg, dry, push):
         verify_layers = layers or list(decod.keys())
         post = S.decodability_map(model, tok, cfg, sub_pairs, layers=verify_layers,
                                   edit_basis=scope_basis, n=(C.DRY_LIMIT if dry else None))
-        base_dec = float(np.mean([decod[L] for L in verify_layers if L in decod])) if verify_layers else float("nan")
+        base_dec = float(np.mean([decod[L] for L in post if L in decod])) if post else float("nan")
         post_dec = float(np.mean(list(post.values()))) if post else float("nan")
         drop = (1 - post_dec / base_dec) if (np.isfinite(base_dec) and base_dec > 1e-9) else float("nan")
         loc_json = {"model_name": name, "decodability_by_layer": {int(k): round(v, 5) for k, v in decod.items()},
