@@ -371,3 +371,4 @@
 2026-06-21 09:36:38,992 | INFO | osm_behavioral | OSM gemma-2-2b-it: 600/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 09:37:11,814 | INFO | osm_behavioral | OSM gemma-2-2b-it: 704/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 09:37:42,309 | INFO | osm_behavioral | OSM gemma-2-2b-it: 800/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 09:37:43,746 | INFO | repair.checkpoint | checkpoint push: ok
