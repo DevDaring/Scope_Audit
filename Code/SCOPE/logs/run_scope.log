@@ -487,3 +487,6 @@
 2026-06-21 12:32:03,779 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:35:27,961 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:36:09,016 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:36:10,426 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 12:36:10,778 | INFO | load_osm | Model 'phi-4-mini-instruct' unloaded and VRAM freed.
+2026-06-21 12:36:10,946 | INFO | scope.run | scope phi-4-mini-instruct complete

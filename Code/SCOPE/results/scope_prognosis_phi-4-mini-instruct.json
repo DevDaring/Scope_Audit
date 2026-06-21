@@ -1,0 +1,7 @@
+{
+  "model_name": "phi-4-mini-instruct",
+  "n": 1000,
+  "spearman_audit_vs_residual": 0.7783636156378825,
+  "spearman_p": 5.571220038006111e-204,
+  "repaired_fraction": 0.806
+}
