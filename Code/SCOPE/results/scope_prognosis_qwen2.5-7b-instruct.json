@@ -1,0 +1,7 @@
+{
+  "model_name": "qwen2.5-7b-instruct",
+  "n": 1000,
+  "spearman_audit_vs_residual": 0.8489421005641576,
+  "spearman_p": 1.1495540482582524e-278,
+  "repaired_fraction": 0.572
+}
