@@ -1,1 +1,1 @@
-setup complete; SCOPE dry-run (2 instances) @ Sun Jun 21 01:08:29 UTC 2026
+scope-main relaunch (clean after dryrun-fix) running @ Sun Jun 21 01:41:49 UTC 2026
