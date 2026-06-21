@@ -537,3 +537,11 @@ A new version of the following files was downloaded from https://huggingface.co/
 2026-06-21 10:26:06,793 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 10:26:06,800 | INFO | utils_attention | Creating nnsight LanguageModel wrapper for 'microsoft/Phi-4-mini-instruct' (cached).
 You're using a GPT2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+2026-06-21 10:27:46,767 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 10:31:06,922 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:31:48,179 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:33:36,580 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:34:18,129 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:36:09,143 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:36:50,421 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 10:37:47,960 | INFO | scope.run | scope phi-4-mini-instruct: localised layers=[0, 1, 2, 3, 4, 5, 6, 7] pctile=75.0 util=-0.005 decod 0.1700->0.1743 (drop -0.02)
