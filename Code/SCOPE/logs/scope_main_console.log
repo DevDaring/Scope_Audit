@@ -284,3 +284,13 @@ You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokeni
 2026-06-21 05:56:04,714 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 05:56:32,073 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 05:57:01,328 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 304/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:57:20,778 | INFO | repair.checkpoint | checkpoint push: ok
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:650: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+2026-06-21 05:57:30,720 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 400/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:58:00,365 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 504/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:58:38,985 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 600/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:59:31,164 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 06:00:05,871 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 800/800 prompts done (sample_index=0, batch_size=8).
