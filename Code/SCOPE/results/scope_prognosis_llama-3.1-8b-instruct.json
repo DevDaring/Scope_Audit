@@ -1,0 +1,7 @@
+{
+  "model_name": "llama-3.1-8b-instruct",
+  "n": 1000,
+  "spearman_audit_vs_residual": 0.7147860881037992,
+  "spearman_p": 3.536900904281514e-157,
+  "repaired_fraction": 0.819
+}
