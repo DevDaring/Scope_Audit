@@ -601,3 +601,13 @@ You're using a GPT2TokenizerFast tokenizer. Please note that with a fast tokeniz
 2026-06-21 11:58:50,262 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 600/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:00:06,709 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:00:45,773 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 800/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:00:47,112 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 12:03:15,568 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/160 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:04:15,360 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:04:47,773 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:05:22,750 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 304/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:05:55,046 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 400/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:06:30,275 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 504/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:07:14,786 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 600/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:07:55,020 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:08:44,654 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 800/800 prompts done (sample_index=0, batch_size=8).
