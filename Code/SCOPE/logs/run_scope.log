@@ -204,3 +204,10 @@
 2026-06-21 05:30:34,796 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 05:35:36,642 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 05:36:09,234 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:42:19,425 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 05:42:31,297 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:43:15,828 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:46:36,138 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:47:33,578 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:50:52,955 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 05:51:24,519 | INFO | osm_behavioral | OSM qwen2.5-7b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
