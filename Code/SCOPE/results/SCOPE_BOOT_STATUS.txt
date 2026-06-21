@@ -1,1 +1,1 @@
-setup complete; SCOPE dry-run (2 instances) @ Sat Jun 20 18:45:13 UTC 2026
+container started (GPU 0: NVIDIA RTX 5880 Ada Generation (UUID: GPU-061b563f-d26e-b73e-81d6-0755aa70dd61)) @ Sun Jun 21 01:04:39 UTC 2026
