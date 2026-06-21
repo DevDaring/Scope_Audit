@@ -285,6 +285,12 @@ def run_model(cfg, dry, push):
 
 def cmd_main(dry=False):
     from checkpoint import CheckpointPusher, push_checkpoint
+    if dry:
+        # Dry results go to a throwaway subdir so they NEVER pollute the real results/
+        # nor trip the main run's resume-skip. The bootstrap rm -rf's results/dryrun after
+        # the dry passes, and checkpoint.py already excludes results/dryrun from pushes.
+        C.RESULTS = C.RESULTS / "dryrun"
+        C.RESULTS.mkdir(exist_ok=True)
     integrity.run()
     pusher, push = None, (lambda *_: None)
     if not dry:
