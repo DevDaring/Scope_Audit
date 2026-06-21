@@ -24,6 +24,16 @@ methods, the held-out and behavioural tests, the ablations, and the prognosis li
    dimensions the model relies on. The design target is to remove the behavioural bias
    while keeping accuracy, where all-layer erasure does not.
 
+**Outcome of the full four-model run (numbers in Section 3.4).** SCOPE beats the closest
+prior method, Faithful-Patchscopes, on **2 of 4** models (Qwen2.5-7B, Phi-4-mini) and is the
+**least destructive** edit on every model — its four-option accuracy cost stays within
+±0.02 while other methods lose up to 55 points. The two design mechanisms do **not**
+generalise: the Patchscope localisation never beats a random choice of layers, and the
+massive-activation protection improves utility on only one model. The honest reading is a
+utility-preserving debiaser plus a negative result on decodability-localisation — on Llama
+and Gemma the bias is fused with the massive-activation dimensions SCOPE protects, so a
+localised edit cannot reach it.
+
 Every number is produced by the same evaluators on the same pairs, and nothing is
 hard-coded to win. The run reports the honest outcome.
 
@@ -114,16 +124,54 @@ A cloud GPU bootstrap is provided: `Code/SCOPE/bootstrap_scope.sh` pins the envi
 downloads the models, runs the dry check, then the main run, with 15-minute GitHub
 checkpoints and pull-retry on failure (a fix needs no redeploy).
 
+### 3.4 Results of the completed run
+
+The full run (four models, 2026-06-21) is reproduced in `Code/SCOPE/results/`. Every
+`scope_final` has the ten methods, no error rows, and `n_pairs = 1000`.
+`causal_residual_removed` (`crr`) is the fraction of the 1000 shared eval pairs whose
+audited commutator falls under `tau` after the edit; `util_cost` is the four-option
+accuracy drop (negative = accuracy improved).
+
+**Baseline reproducibility.** The nine baselines reproduce the audit-paper reference
+(`cure_final_*`) within numerical noise on all four models (mean |Δ-crr| 0.008–0.012,
+mixed sign — a threshold-fraction metric on different hardware), so the comparison set is
+stable across runs.
+
+**SCOPE vs Faithful-Patchscopes** (head-to-head; the held-out behavioural test agrees):
+
+| Model | SCOPE crr / util | Faithful-Patchscopes crr / util | Winner |
+|---|---|---|---|
+| Llama-3.1-8B | 0.495 / −0.020 | 0.808 / −0.030 | Patchscopes |
+| Qwen2.5-7B | 0.463 / −0.020 | 0.464 / **+0.164** | **SCOPE** |
+| Gemma-2-2B | 0.377 / +0.020 | 0.707 / +0.020 | Patchscopes |
+| Phi-4-mini | 0.405 / −0.005 | 0.369 / +0.035 | **SCOPE** |
+
+SCOPE wins where the aggressive ablation backfires (Qwen: Patchscopes loses 16 accuracy
+points; Phi: Patchscopes removes less bias). Where Patchscopes stays both strong and safe
+(Llama, Gemma) it removes more bias at equal cost.
+
+**Utility is the consistent SCOPE property.** Held-out accuracy change vs the unedited
+model: SCOPE **+0.006** (Llama), **+0.048** (Qwen), **−0.044** (Gemma), **−0.012** (Phi) —
+the smallest or near-smallest of any edit on every model, while
+`generic_erase`/`biasgym`/`nofreelunch` lose 12–55 points. SCOPE never collapses the model.
+
 ---
 
 ## 4. Ablations (these keep the paper honest)
 
-1. **Localisation** -- SCOPE (localised) vs all-layer vs random sites: shows the Patchscope
-   localisation is what helps.
-2. **Massive-activation protection** -- orthogonal-to-massive vs direct removal: shows that
-   protecting load-bearing directions is what preserves utility.
-3. **Verification calibration** -- decodability before vs after, and its correlation with the
-   behavioural flip-rate drop.
+`scope_ablation_<model>.parquet` pits the localised + protected edit against three variants.
+The completed run gives an honest, partly-negative result:
+
+1. **Localisation** (SCOPE vs random vs all-layer sites). The Patchscope-localised layers do
+   **not** beat a random choice of the same number of layers on any model — `scope_random`
+   removes as much or more causal bias (e.g. Llama 0.638 vs 0.495, Gemma 0.453 vs 0.377).
+   Decodability-localisation does not add value in this study.
+2. **Massive-activation protection** (orthogonal-to-massive vs direct removal). Protection
+   preserves utility on **one** model (Qwen: `scope_noprotect` costs 6 accuracy points more);
+   on Gemma it slightly hurts. Where the bias is not fused with the massive dimensions,
+   protection is what gives SCOPE its safety.
+3. **Verification calibration** — decodability before vs after the edit, recorded per model in
+   `scope_localization_<model>.json`.
 
 ---
 
