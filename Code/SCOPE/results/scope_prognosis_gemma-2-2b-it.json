@@ -1,0 +1,7 @@
+{
+  "model_name": "gemma-2-2b-it",
+  "n": 1000,
+  "spearman_audit_vs_residual": 0.8442325709429492,
+  "spearman_p": 1.4571577091262565e-272,
+  "repaired_fraction": 0.849
+}
