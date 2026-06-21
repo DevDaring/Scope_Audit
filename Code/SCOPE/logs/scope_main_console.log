@@ -563,3 +563,8 @@ You're using a GPT2TokenizerFast tokenizer. Please note that with a fast tokeniz
 2026-06-21 11:17:59,651 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 11:24:31,267 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 11:25:28,467 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 11:27:52,391 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 11:29:00,173 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 11:29:41,747 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 11:33:37,677 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 11:34:20,671 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
