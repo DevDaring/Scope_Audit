@@ -635,3 +635,5 @@ You're using a GPT2TokenizerFast tokenizer. Please note that with a fast tokeniz
 2026-06-21 12:36:10,426 | INFO | repair.checkpoint | checkpoint push: ok
 2026-06-21 12:36:10,778 | INFO | load_osm | Model 'phi-4-mini-instruct' unloaded and VRAM freed.
 2026-06-21 12:36:10,946 | INFO | scope.run | scope phi-4-mini-instruct complete
+2026-06-21 12:36:12,322 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 12:36:12,322 | INFO | scope.run | SCOPE COMPLETE (dry=False)
