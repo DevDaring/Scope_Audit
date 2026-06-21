@@ -481,3 +481,9 @@
 2026-06-21 12:22:36,852 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:23:17,896 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 12:27:16,084 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:27:57,864 | INFO | repair.checkpoint | checkpoint push: ok
+2026-06-21 12:27:58,911 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:31:22,541 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:32:03,779 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:35:27,961 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 12:36:09,016 | INFO | osm_behavioral | OSM phi-4-mini-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
