@@ -69,3 +69,16 @@ Moving model to device:  cuda
   warnings.warn(
 2026-06-21 03:30:37,791 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/200 prompts done (sample_index=0, batch_size=8).
 2026-06-21 03:31:19,414 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/200 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:31:20,774 | INFO | repair.checkpoint | checkpoint push: ok
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-21 03:37:33,976 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/160 prompts done (sample_index=0, batch_size=8).
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:633: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+2026-06-21 03:38:26,613 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 104/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:38:57,721 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 200/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:39:31,674 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 304/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:40:03,520 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 400/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:40:38,104 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 504/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:41:09,861 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 600/800 prompts done (sample_index=0, batch_size=8).
+2026-06-21 03:41:43,719 | INFO | osm_behavioral | OSM llama-3.1-8b-instruct: 704/800 prompts done (sample_index=0, batch_size=8).
